@@ -6,27 +6,27 @@ Este projeto implementa uma solucao de analise automatizada de documentos utiliz
 
 ## Arquitetura da Solucao
 
-```
-Documento (PDF/Imagem)
-        |
-        v
-[Azure Document Intelligence] --> Extrai dados estruturados
-        |
-        v
-[Modulo de Validacao] --> Verifica consistencia dos dados
-        |
-        v
-[Azure OpenAI] --> Analisa padroes de fraude com IA generativa
-        |
-        v
-Relatorio de Analise (JSON/Dashboard)
+```mermaid
+flowchart LR
+    A[Document Input\nPDF / Image] --> B[Azure Document Intelligence\nForm Recognizer]
+    B --> C[Data Extraction\nFields / Values / Metadata]
+    C --> D[Fraud Pattern Detection\nAnomaly Validation\nCPF / CNPJ / Dates]
+    D --> E[Risk Score\n0 to 100]
+    E --> F[Report\nJSON / Streamlit Dashboard]
+
+    style A fill:#0078D4,color:#fff
+    style B fill:#0063B1,color:#fff
+    style C fill:#005A9E,color:#fff
+    style D fill:#D83B01,color:#fff
+    style E fill:#C50F1F,color:#fff
+    style F fill:#107C10,color:#fff
 ```
 
 ## Tecnologias Utilizadas
 
 - **Python 3.10+**
 - **Azure Document Intelligence** - Extracao de dados de documentos
-- **Azure OpenAI Service** - Analise de padroes com GPT
+- **Azure OpenAI Service** - Analise de padroes e avaliacao de risco
 - **Azure Blob Storage** - Armazenamento de documentos
 - **Streamlit** - Dashboard de analise
 
@@ -35,7 +35,7 @@ Relatorio de Analise (JSON/Dashboard)
 1. **Extracao de dados** de documentos PDF e imagens usando Azure Document Intelligence
 2. **Validacao de campos** - Verifica CPF, CNPJ, datas e valores
 3. **Deteccao de anomalias** - Identifica inconsistencias nos documentos
-4. **Analise com IA generativa** - Azure OpenAI avalia riscos de fraude
+4. **Analise de risco** - Azure OpenAI Service avalia padroes e riscos de fraude
 5. **Dashboard interativo** - Visualizacao dos resultados em tempo real
 6. **Pontuacao de risco** - Score de 0 a 100 para cada documento
 
