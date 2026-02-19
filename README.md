@@ -1,5 +1,14 @@
 # Analise de Documentos Anti-fraude com Azure AI
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+</div>
+
+
 ## Descricao
 
 Este projeto implementa uma solucao de analise automatizada de documentos utilizando Azure AI para identificar padroes de fraude, validar autenticidade e aumentar a seguranca de transacoes e processos empresariais, garantindo maior confiabilidade no processamento de documentos sensiveis.
@@ -103,3 +112,32 @@ streamlit run app.py
 5. Exporte o relatorio em JSON
 
 ## Projeto desenvolvido como parte do Microsoft Certification Challenge #4 - AI-102 na plataforma DIO.
+
+
+---
+
+## English
+
+### Overview
+
+Analise de Documentos Anti-fraude com Azure AI - A project built with Python, Azure, developed by Gabriel Demetrios Lafis as part of professional portfolio and continuous learning in Data Science and Software Engineering.
+
+### Key Features
+
+This project demonstrates practical application of modern development concepts including clean code architecture, responsive design patterns, and industry-standard best practices. The implementation showcases real-world problem solving with production-ready code quality.
+
+### How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/galafis/analise-documentos-anti-fraude-azureai.git
+   ```
+2. Follow the setup instructions in the Portuguese section above.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Developed by [Gabriel Demetrios Lafis](https://github.com/galafis)
